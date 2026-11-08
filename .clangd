@@ -1,0 +1,13 @@
+# The compile commands of the debug build (cmake --preset debug), which also put the
+# generated shader headers on the include path. clangd picks up .clang-tidy on its own.
+CompileFlags:
+  CompilationDatabase: cmake-build-debug
+Diagnostics:
+  # Matches .clang-tidy's -misc-include-cleaner: Skia's headers are included as
+  # umbrella headers, and the hints would point at its internal ones.
+  UnusedIncludes: None
+  MissingIncludes: None
+InlayHints:
+  Designators: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes

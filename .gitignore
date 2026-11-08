@@ -1,0 +1,32 @@
+# Build trees: CLion's profiles and the presets', all named cmake-build-*.
+build/
+cmake-build-*/
+
+# The demo's executable and the image it writes.
+/bin/
+/frame.png
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+compile_commands.json
+Testing/
+
+# Compiled objects and libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Editors and tools
+.cache/
+.idea/workspace.xml
+.idea/shelf/
+*.swp
+
+# macOS
+.DS_Store
